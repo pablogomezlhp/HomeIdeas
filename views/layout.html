@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    {% block title %}
+<title>Casa Criativa</title>
+{% endblock title %}
+</head>
+
+
+<body id="{{ bodyId }}">
+   
+
+    <div id="container">
+        
+        {% block content %} 
+        
+        
+        {% endblock %}
+       
+
+    </div>
+
+    <footer>
+        Com ♥️ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
+    </footer>
+    
+{% include "modal.html" %}
+    <script src="js/script.js"></script>
+</body>
+
+</html>
